@@ -3,7 +3,6 @@ package com.altissia.calculation.endpoint;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +79,7 @@ class CalculEndpointIT {
 				}).getBody();
 
 		assertAll(() -> assertNotNull(result), () -> assertEquals(8, result.size()),
-				() -> assertEquals(expected,result, "input array"));
+				() -> assertEquals(expected, result, "input array"));
 
 	}
 
