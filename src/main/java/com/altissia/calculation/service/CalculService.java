@@ -1,9 +1,13 @@
 package com.altissia.calculation.service;
 
-import java.util.Map;
+import java.util.List;
+
+import com.altissia.calculation.dto.CalculDTO;
 
 public interface CalculService {
 
-	public Map<Integer, String> calcul(int[] entry);
+	public List<CalculDTO> calcul(int[] entry);
+
+	public String calculer(int entry);
 
 }
